@@ -1,0 +1,121 @@
+/* File: styles.css
+ * GUI Assignment: Creating an Interactive Dynamic Table
+ * Nicholas Aswani, UMass Lowell Computer Science, nicholas_aswani@student.uml.edu
+ * copyright (c) 2021 by Nicholas. All rights reserved. May be freely copied or excerpted for 
+ * educational purposes with credit to the author.
+ */
+
+/* sets the pages background color */
+body{ 
+    background-color: rgb(248, 241, 246);
+}
+
+/*  this css style puts a colored border on the table as well each data cell */
+table,th,td {
+        /* sets border size */
+    border: 1px solid blue;
+    /*removes the space between the borders of each cell */
+    border-collapse: collapse; 
+}
+
+/* increases the width of each cell in pixels */
+th,td {
+    width: 30px;
+    font-size: 20px;
+}
+
+/* sets the background color of the first column and row; also the color of data */
+th{
+    color:rgb(24, 2, 15);
+    background-color:aqua;
+}
+sets the color display in each cell when mouse pointer hovers on it
+td:hover {
+    background-color: cornflowerblue;
+}
+sets color of data elements in odd columns
+td:nth-child(odd){
+    color:rgb(182, 45, 182);
+}
+sets the color of data in odd rows
+tr:nth-child(odd){
+    color:rgb(182, 45, 182);
+}
+/* /* this div wraps the other divs in it sets dimensions and uses flexbox to adjust */
+/* adjust the divs according to different page screens */ */
+.container-fluid{
+    width: 100%;
+    height: auto;
+    /*background: #ff000013;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; /* space between divs */
+}
+/* the first divs attributes */
+#div1 {
+    background-color: rgb(223, 198, 198);
+    width:fit-content;  /* fixes the form fields from breaking out of the fieldset */
+    float:left;
+    padding: 10px;
+    margin-bottom: 10px;  /* adds space below div1 */
+    margin-right: .5em;
+    height: fit-content;
+    border: solid black;
+}
+/* second divs attributes */
+#div2 {
+    background-color: rgb(237, 237, 245);
+    width: 72%;
+    float:left;
+    padding: 0px;
+    height: fit-content;
+    /* height: 343px; */
+}
+/* css styling for the fieldset form */
+@-moz-document url-refix() {
+fieldset{
+    min-width: 85%; 
+    display: table-cell;
+/*text-align: left; */}
+ }
+
+#max_col_value {
+    margin-left: 16px;
+}
+
+#min_col_value {
+    margin-left: 16px;
+}
+
+#max_row_value {
+    margin-left: 16px;
+}
+
+#min_row_value {
+    margin-left: 19px;
+}
+
+input[type= number] {
+    /* box-shadow: 0 0 5px #ff009d; */
+    border: 2px solid #3700ff;
+   /* color: #4f4f4f;*/
+}
+/* full width input fields 
+input [type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 2px solid rgb(214, 23, 102);
+    box-sizing: border-box;
+
+}  */
+
+/* .generate-btn { */
+    /* display: inline-block; */
+    /* padding: 3px; */
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+/* } */
+/*  */

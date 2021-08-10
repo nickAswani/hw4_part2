@@ -1,0 +1,79 @@
+<!--
+  File: index.html
+  GUI Assignment: HW4 part2: JQuery UI Slider and Tab Widgets
+  Nicholas Aswani, UMass Lowell Computer Science, nicholas_aswani@student.uml.edu
+  copyright (c) 2021 by Nicholas. All rights reserved. May be freely copied or excerpted for 
+  educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tabslet.js/1.7.3/jquery.tabslet.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css"> 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   
+  
+    <!-- <script src="mult_table.js"></script> -->
+    <h1>Multiplication Table</h1>
+  </head>
+  <h2>Please Use the slider to pick maximum and minimum values for your for your table</h2>
+  <body>
+  
+      <div id="div1">
+        <form id="form1">
+         <!-- <div id="sliderRange" data-min="0" data-max="200"></div> -->
+        <p class="form_filters">
+  
+          <div id="slider1">  </div><br/>
+          <input type="number" id="max_row_value" placeholder= max-row name="max_row">
+          <label for="max_row_value">[Max Row Value (-50 to 50)</label><br><br>
+          
+          <div id="slider2">  </div><br/>
+          <input type="number" id="min_row_value" placeholder= min-row name="min_row">
+          <label for="min_row_value">[Min Row Value (-50 to 50)</label><br><br>
+
+          <div id="slider3">  </div><br/>
+          <input type="number" id="max_col_value" placeholder= max-col name="max_col">
+          <label for="max_col_value">[Max Column Value(-50 to 50)</label><br><br>
+
+          <div id="slider4">  </div><br/>
+          <input type="number" id="min_col_value" placeholder= min-col name="min_col">
+          <label for="min_col_value">[Min Column Value  (-50 to 50)</label><br><br>
+
+        </p>
+    </form>
+
+    <button type="button" id="addTabButton">Create Tab</button>
+    <button type="button" id="deleteTabButton">Delete Tab</button>
+    
+    </div id="div2" >
+     <div id="Tabs"></div>
+     <ul>
+
+     </ul>
+     </div>
+</div>
+
+<div id="div2"> 
+  <table id="mult_table"></table>
+</div>
+   
+<!--validation libraries links-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="mult_table.js"> </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</body>
+</html>
